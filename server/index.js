@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.all('/', (req, res) => {
   res.send('NeuroMotion AI Backend is Active!');
 });
 
