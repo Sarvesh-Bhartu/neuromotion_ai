@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: neuromotion-backend
+    env: node
+    plan: starter # To avoid cold restarts
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NEO4J_URI
+        sync: false
+      - key: NEO4J_USER
+        sync: false
+      - key: NEO4J_PASS
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false

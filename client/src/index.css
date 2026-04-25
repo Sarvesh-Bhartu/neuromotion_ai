@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-neutral-dark bg-white antialiased font-sans;
+  }
+
+  h1 {
+    @apply text-[32px] font-bold text-brand-dark mb-4;
+  }
+
+  h2 {
+    @apply text-[24px] font-semibold text-neutral-dark mb-3;
+  }
+
+  h3 {
+    @apply text-[18px] font-semibold text-brand-blue mb-2;
+  }
+}
